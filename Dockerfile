@@ -6,4 +6,4 @@ RUN npm config set proxy http://192.168.11.18:8118 && npm config set https-proxy
 
 
 FROM  webhttp
-COPY --from=builder /src/out /usr/local/openresty/nginx/html
+COPY --from=builder /src/public /usr/local/openresty/nginx/html
